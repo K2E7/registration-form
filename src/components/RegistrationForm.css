@@ -1,0 +1,115 @@
+/* src/components/RegistrationForm.css */
+
+/* Dark background */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1f1f1f; /* Dark gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #e0e0e0; /* Light text color */
+  }
+  
+  .form-container {
+    min-width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .form-wrapper {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    background-color: #323232; /* Darker background for form */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
+    border: 2px solid #b8860b70; /* Gold border */
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-wrapper:hover {
+    border-color: #b8860b; 
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #b8860b; /* Wells Fargo red for heading */
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px; /* Slight spacing for elegance */
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    color: #b8860b; /* Gold for labels */
+  }
+  
+  .form-control {
+    padding: 12px 15px;
+    font-size: 16px;
+    background-color: #3a3a3a; /* Dark input background */
+    color: #e0e0e0; /* Light text inside inputs */
+    border: 1px solid #555555; /* Dark border for inputs */
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #c70000; /* Red border on focus */
+    outline: none;
+    box-shadow: 0 0 6px rgba(199, 0, 0, 0.5); /* Red shadow on focus */
+  }
+  
+  .error {
+    color: #e74c3c; /* Red for errors */
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  
+  .submit-button {
+    padding: 14px 20px;
+    font-size: 18px;
+    background-color: #b8860b; /* Red for the button */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #c70000; /* Gold button on hover */
+  }
+  
+  .submit-button:disabled {
+    background-color: #555555; /* Dark gray for disabled button */
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 480px) {
+    .form-wrapper {
+      padding: 20px;
+    }
+  }
+  
